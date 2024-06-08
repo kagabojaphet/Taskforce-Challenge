@@ -39,6 +39,7 @@ body ::-webkit-scrollbar{
   position: relative;
   height: 588px;
 }
+/* Hovering Image Rotate*/
 .gallery-one .gallery-item:hover{
     transform: scale(1.2) rotatey(-180deg);
     transition: 4s ;
@@ -52,6 +53,7 @@ body ::-webkit-scrollbar{
     background-size: cover;
     object-fit: cover;
 }
+/* Styling Image Discription or name*/
 .gallery-item .image-discription{
     position: absolute;
     left: 0;
@@ -82,9 +84,7 @@ body ::-webkit-scrollbar{
 
 }
 
-
 /* Gallery Three */
-
 .gallery-two{
     width: 100%;
     height: auto;
