@@ -10,7 +10,9 @@ The Image Gallery Challenge is the main highlight of this repository. It is a we
 
 # Features
 1.Responsive design
+
 2.Dynamic image loading
+
 3.Interactive UI
 
 # How to Run Locally
@@ -18,7 +20,7 @@ The Image Gallery Challenge is the main highlight of this repository. It is a we
 git clone https://github.com/kagabojaphet/Taskforce-Challenge.git
 
 2.Navigate to the project directory:
-cd Taskforce-Challenge
+cd `Taskforce-Challenge`
 
 3.Open `index.html` in your browser.
 
