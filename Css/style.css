@@ -1,21 +1,25 @@
 /* style.css */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 *,
 *::after,
 *::before {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
-body ::-webkit-scrollbar{
+
+body ::-webkit-scrollbar {
     display: none;
     overflow-x: hidden;
-  }
-.gallery-container{
+}
+
+.gallery-container {
     width: 100%;
     height: auto;
     padding: 4rem 0;
@@ -26,26 +30,30 @@ body ::-webkit-scrollbar{
     align-items: center;
     gap: 4rem;
 }
+
 /* Gallery One */
-.gallery-one{
+.gallery-one {
     width: 100%;
     height: auto;
     margin: 100px auto 50px;
     display: grid;
     grid-gap: 0;
-    grid-template-columns: repeat(auto-fit,minmax(293px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(293px, 1fr));
 }
-.gallery-one .gallery-item{
-  position: relative;
-  height: 588px;
+
+.gallery-one .gallery-item {
+    position: relative;
+    height: 588px;
 }
+
 /* Hovering Image Rotate*/
-.gallery-one .gallery-item:hover{
+.gallery-one .gallery-item:hover {
     transform: scale(1.2) rotatey(-180deg);
-    transition: 4s ;
-    z-index: 999;   
-} 
-.gallery-one .gallery-item img{
+    transition: 4s;
+    z-index: 999;
+}
+
+.gallery-one .gallery-item img {
     width: 100%;
     height: 100%;
     background-position: center center;
@@ -53,8 +61,9 @@ body ::-webkit-scrollbar{
     background-size: cover;
     object-fit: cover;
 }
+
 /* Styling Image Discription or name*/
-.gallery-item .image-discription{
+.gallery-item .image-discription {
     position: absolute;
     left: 0;
     top: 0;
@@ -62,30 +71,32 @@ body ::-webkit-scrollbar{
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content:end;
+    justify-content: end;
     gap: 2rem;
-    padding: 0 0 4rem  4rem;
-    background: linear-gradient( rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.26),rgba(0, 0, 0, 0.699));
+    padding: 0 0 4rem 4rem;
+    background: linear-gradient(rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.26),
+            rgba(0, 0, 0, 0.699));
 }
-.gallery-one .image-discription .name h1{
-    color: #FFFFFF;
+
+.gallery-one .image-discription .name h1 {
+    color: #ffffff;
     font-size: 38px;
     line-height: 38px;
     font-weight: 700;
     font-family: "Roboto Condensed", sans-serif;
-
 }
- .gallery-one .image-discription p{
-    color: #FFFFFF;
+
+.gallery-one .image-discription p {
+    color: #ffffff;
     font-size: 12px;
     line-height: 16.02px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-
 }
 
 /* Gallery Three */
-.gallery-two{
+.gallery-two {
     width: 100%;
     height: auto;
     display: flex;
@@ -93,13 +104,14 @@ body ::-webkit-scrollbar{
     align-items: center;
     gap: 0;
 }
-.gallery-two .gallery-item{
-  position: relative;
-  width: 98.5px;
-  height:600px ;
+
+.gallery-two .gallery-item {
+    position: relative;
+    width: 98.5px;
+    height: 600px;
 }
 
-.gallery-two .gallery-item img{
+.gallery-two .gallery-item img {
     width: 100%;
     height: 100%;
     background-position: center center;
@@ -107,11 +119,12 @@ body ::-webkit-scrollbar{
     background-size: cover;
     object-fit: cover;
 }
-.gallery-two .gallery-item:hover{
+
+.gallery-two .gallery-item:hover {
     transform: scale(1.2) rotatey(180deg);
-    transition: 4s ;
-    z-index: 999;   
-} 
+    transition: 4s;
+    z-index: 999;
+}
 
 .modal {
     display: none;

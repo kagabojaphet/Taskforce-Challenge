@@ -9,17 +9,17 @@ var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
 for (let i = 0; i < images.length; i++) {
-    images[i].onclick = function() {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-    }
+  images[i].onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  };
 }
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+span.onclick = function () {
+  modal.style.display = "none";
+};
